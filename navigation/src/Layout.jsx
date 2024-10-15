@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom"
+import { Link ,Outlet} from "react-router-dom"
 
 function Layout(){
     return(
+        <>
         <nav>
             <ul>
                 <li>
@@ -16,6 +17,8 @@ function Layout(){
             </ul>
 
         </nav>
+        <Outlet/>
+        </>
     )
 }
 export default Layout
